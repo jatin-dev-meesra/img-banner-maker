@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Banner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Meesra Image Banner</h2>
+      <div class="wrapper">
+        <div class="editor-panel">
+          <div class="user-inputs">
+            <label for="user_name">Username</label>
+            <input id="user_name" type="text" placeholder="Enter your name" />
+            <label for="user_email">Email</label>
+            <input
+              id="user_email"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <label for="user_mobile">Mobile</label>
+            <input
+              id="user_mobile"
+              type="text"
+              placeholder="Enter your mobile number"
+            />
+          </div>
+          <div class="img-inputs">
+            <button class="choose-user-img">Choose User Image</button>
+            <button class="choose-creative-img">Choose Creative</button>
+            <input type="file" class="file-input" hidden />
+            <input type="file" class="user-img-input" class="file-input" hidden />
+          </div>
+          <div class="user-actions">
+            <button class="update-details">Update Details</button>
+            <button class="download-img">Save Creative</button>
+          </div>
+        </div>
+        <div class="preview-img">
+          <div class="dl-save-img">
+            <img src="../7.jpg" alt="preview-img" />
+            <div class="user-details">
+              <div class="user-img">
+                <img src="./user-6.jpg" alt="" />
+              </div>
+              <ul class="detail-list">
+                <li id="namefield" class="name-li">username</li>
+                <li id="emailfield">email</li>
+                <li id="mobilefield">+919999999999</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
